@@ -115,5 +115,32 @@
 <script src="data.js"></script>
 <script src="index.js"></script>
 
+<div class="caneva-logo-container">
+  <img src="img/logo-caneva.jpg" alt="Caneva Homes Logo" class="caneva-logo-img">
+</div>
+
+<style>
+  .caneva-logo-container {
+    position: fixed;
+    bottom: 20px; /* Separación del borde inferior */
+    right: 20px;  /* Separación del borde derecho */
+    z-index: 1000; /* Asegura que esté por encima del tour */
+    opacity: 0.8;  /* Sutil transparencia para que no moleste */
+    transition: opacity 0.3s ease; /* Efecto suave al pasar el mouse */
+  }
+
+  .caneva-logo-img {
+    width: 120px;  /* Ancho del logo (ajustalo a tu gusto) */
+    height: auto;  /* Mantiene la proporción */
+    border-radius: 5px; /* Un toque suave en los bordes */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* Sombra para darle profundidad */
+  }
+
+  /* Efecto al pasar el mouse */
+  .caneva-logo-container:hover {
+    opacity: 1; /* Se vuelve totalmente visible */
+  }
+</style>
+
 </body>
 </html>
